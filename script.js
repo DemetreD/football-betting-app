@@ -41,4 +41,14 @@ const game = {
   },
 };
 
-const [player1, player2] = game.players;
+//1
+const [players1, players2] = game.players;
+console.log(players1, players2);
+
+//2
+const [gk, ...fieldPlayers] = players1;
+console.log(gk, fieldPlayers);
+
+//3
+const allPlayers = [...players1, ...players2];
+console.log(allPlayers);
